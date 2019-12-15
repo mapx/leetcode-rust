@@ -55,3 +55,20 @@ macro_rules! tree {
     };
     ($($e:expr,)*) => {(tree![$($e),*])};
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_macro() {
+        let empty_tree: Option<i32> = tree![];
+        tree![1,];
+        tree![1, 1];
+        tree![1, null, 1];
+        tree![1, 1, 1];
+        tree![1, 1, 1, 1];
+        tree![1, null, 1, 1];
+        tree![-1, null, -1, -1, null, -1];
+    }
+}
