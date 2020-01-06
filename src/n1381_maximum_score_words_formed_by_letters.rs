@@ -45,7 +45,7 @@ pub struct Solution {}
 
 impl Solution {
     pub fn max_score_words(words: Vec<String>, letters: Vec<char>, score: Vec<i32>) -> i32 {
-    1
+        1
     }
 }
 
@@ -56,6 +56,5 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1381() {
-    }
+    fn test_1381() {}
 }

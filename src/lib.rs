@@ -23,3 +23,6 @@ mod n1387_find_elements_in_a_contaminated_binary_tree;
 mod n1388_greatest_sum_divisible_by_three;
 mod n1389_minimum_moves_to_move_a_box_to_their_target_location;
 mod n1395_minimum_time_visiting_all_points;
+mod n1435_xor_queries_of_a_subarray;
+mod n1436_get_watched_videos_by_your_friends;
+mod n1437_minimum_insertion_steps_to_make_a_string_palindrome;

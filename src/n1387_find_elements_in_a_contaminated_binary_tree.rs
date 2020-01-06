@@ -101,7 +101,7 @@ struct FindElements {
 impl FindElements {
     fn new(root: Option<Rc<RefCell<TreeNode>>>) -> Self {
         let mut vue = HashSet::new();
-        let mut todo = vec![(root.clone(), 0)];
+        let mut todo = vec![(root, 0)];
         while let Some((node, n)) = todo.pop() {
             if let Some(node) = node {
                 vue.insert(n);
