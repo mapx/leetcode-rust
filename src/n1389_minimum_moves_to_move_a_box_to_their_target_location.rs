@@ -112,8 +112,8 @@ impl Solution {
             if p1 == p2 {
                 return true;
             }
-            let mut vue = HashSet::new();
-            vue.insert(p1);
+            let mut mem = HashSet::new();
+            mem.insert(p1);
             let mut todo = vec![p1];
             while let Some((i1, j1)) = todo.pop() {
                 for &p in &[
@@ -126,8 +126,8 @@ impl Solution {
                         return true;
                     }
                     let c = pos(&g, p);
-                    if c != '#' && c != 'B' && !vue.contains(&p) {
-                        vue.insert(p);
+                    if c != '#' && c != 'B' && !mem.contains(&p) {
+                        mem.insert(p);
                         todo.push(p);
                     }
                 }

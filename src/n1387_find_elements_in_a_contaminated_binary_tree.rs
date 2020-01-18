@@ -91,7 +91,7 @@ use std::rc::Rc;
 //   }
 // }
 struct FindElements {
-    vue: HashSet<i32>,
+    mem: HashSet<i32>,
 }
 
 /**
@@ -100,35 +100,35 @@ struct FindElements {
  */
 impl FindElements {
     fn new(root: Option<Rc<RefCell<TreeNode>>>) -> Self {
-        let mut vue = HashSet::new();
+        let mut mem = HashSet::new();
         let mut todo = vec![(root, 0)];
         while let Some((node, n)) = todo.pop() {
             if let Some(node) = node {
-                vue.insert(n);
+                mem.insert(n);
                 let node = node.borrow();
                 todo.push((node.left.clone(), n * 2 + 1));
                 todo.push((node.right.clone(), n * 2 + 2));
             }
         }
-        FindElements { vue }
+        FindElements { mem }
     }
 
     fn slow_new(root: Option<Rc<RefCell<TreeNode>>>) -> Self {
-        let mut vue = HashSet::new();
-        fn travel(node: &Option<Rc<RefCell<TreeNode>>>, n: i32, vue: &mut HashSet<i32>) {
+        let mut mem = HashSet::new();
+        fn travel(node: &Option<Rc<RefCell<TreeNode>>>, n: i32, mem: &mut HashSet<i32>) {
             if let Some(v) = node {
-                vue.insert(n);
+                mem.insert(n);
                 let v = v.borrow();
-                travel(&v.left, n * 2 + 1, vue);
-                travel(&v.right, n * 2 + 2, vue);
+                travel(&v.left, n * 2 + 1, mem);
+                travel(&v.right, n * 2 + 2, mem);
             }
         }
-        travel(&root, 0, &mut vue);
-        FindElements { vue }
+        travel(&root, 0, &mut mem);
+        FindElements { mem }
     }
 
     fn find(&self, target: i32) -> bool {
-        self.vue.contains(&target)
+        self.mem.contains(&target)
     }
 }
 

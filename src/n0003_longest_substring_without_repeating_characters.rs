@@ -45,15 +45,15 @@ use std::collections::HashSet;
 impl Solution {
     fn length_of_longest_substring_with_set(s: String) -> i32 {
         let mut lo = -1;
-        let mut saw = HashSet::new();
+        let mut mem = HashSet::new();
         let mut best = 0;
-        let chars: Vec<char> = s.chars().collect();
-        for (hi, c) in chars.iter().clone().enumerate() {
-            while saw.contains(&c) {
+        let bytes = s.as_bytes();
+        for (hi, c) in bytes.iter().clone().enumerate() {
+            while mem.contains(&c) {
                 lo += 1;
-                saw.remove(&chars[lo as usize]);
+                mem.remove(&bytes[lo as usize]);
             }
-            saw.insert(c);
+            mem.insert(c);
             best = cmp::max(best, (hi as i32) - lo);
         }
         best
@@ -63,15 +63,15 @@ impl Solution {
     pub fn length_of_longest_substring(s: String) -> i32 {
         // return Self::length_of_longest_substring_with_set(s);
         let mut lo = -1;
-        let mut saw = 0u128;
+        let mut mem = 0u128;
         let mut best = 0;
-        let chars: Vec<char> = s.chars().collect();
-        for (hi, &c) in chars.iter().enumerate() {
-            while (saw & (1u128 << (c as u128))) != 0 {
+        let bytes = s.as_bytes();
+        for (hi, &c) in bytes.iter().enumerate() {
+            while (mem & (1u128 << (c as u128))) != 0 {
                 lo += 1;
-                saw &= !(1u128 << (chars[lo as usize] as u128));
+                mem &= !(1u128 << (bytes[lo as usize] as u128));
             }
-            saw |= 1u128 << (c as u128);
+            mem |= 1u128 << (c as u128);
             best = cmp::max(best, (hi as i32) - lo);
         }
         best
