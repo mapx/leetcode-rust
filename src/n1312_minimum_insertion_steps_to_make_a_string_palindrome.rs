@@ -1,5 +1,5 @@
 /**
- * [1437] Minimum Insertion Steps to Make a String Palindrome
+ * [1312] Minimum Insertion Steps to Make a String Palindrome
  *
  * Given a string s. In one step you can insert any character at any index of the string.
  *
@@ -124,7 +124,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1437() {
+    fn test_1312() {
         assert_eq!(Solution::min_insertions("zzazz".to_string()), 0);
         assert_eq!(Solution::min_insertions("mbadm".to_string()), 2);
         assert_eq!(Solution::min_insertions("leetcode".to_string()), 5);

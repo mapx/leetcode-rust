@@ -1,5 +1,5 @@
 /**
- * [1200] Remove Interval
+ * [1272] Remove Interval
  *
  * Given a sorted list of disjoint intervals, each interval intervals[i] = [a, b] represents the set of real numbers x such that a <= x < b.
  * We remove the intersections between any interval in intervals and the interval toBeRemoved.
@@ -56,7 +56,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1200() {
+    fn test_1272() {
         assert_eq!(
             Solution::remove_interval(vec![vec![0, 2], vec![3, 4], vec![5, 7]], vec![1, 6]),
             vec![vec![0, 1], vec![6, 7]]

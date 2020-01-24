@@ -1,5 +1,5 @@
 /**
- * [1436] Get Watched Videos by Your Friends
+ * [1311] Get Watched Videos by Your Friends
  *
  * There are n people, each person has a unique id between 0 and n-1. Given the arrays watchedVideos and friends, where watchedVideos[i] and friends[i] contain the list of watched videos and the list of friends respectively for the person with id = i.
  *
@@ -109,7 +109,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1436() {
+    fn test_1311() {
         assert_eq!(
             Solution::watched_videos_by_friends(
                 vec![

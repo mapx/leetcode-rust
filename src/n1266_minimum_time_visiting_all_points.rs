@@ -1,5 +1,5 @@
 /**
- * [1395] Minimum Time Visiting All Points
+ * [1266] Minimum Time Visiting All Points
  *
  * On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points.
  * You can move according to the next rules:
@@ -63,7 +63,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1395() {
+    fn test_1266() {
         assert_eq!(
             Solution::min_time_to_visit_all_points(vec![vec![1, 1], vec![3, 4], vec![-1, 0]]),
             7

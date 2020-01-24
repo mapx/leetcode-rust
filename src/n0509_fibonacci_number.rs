@@ -1,5 +1,5 @@
 /**
- * [1013] Fibonacci Number
+ * [509] Fibonacci Number
  *
  * The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
  *
@@ -67,7 +67,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1013() {
+    fn test_509() {
         assert_eq!(Solution::fib(2), 1);
         assert_eq!(Solution::fib(3), 2);
         assert_eq!(Solution::fib(4), 3);

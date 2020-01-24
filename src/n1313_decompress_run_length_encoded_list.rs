@@ -1,5 +1,5 @@
 /**
- * [1241] Decompress Run-Length Encoded List
+ * [1313] Decompress Run-Length Encoded List
  *
  * We are given a list nums of integers representing a list compressed with run-length encoding.
  *
@@ -50,7 +50,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1241() {
+    fn test_1313() {
         assert_eq!(
             Solution::decompress_rl_elist(vec![1, 2, 3, 4]),
             vec![2, 4, 4, 4]

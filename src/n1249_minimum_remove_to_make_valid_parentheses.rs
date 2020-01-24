@@ -1,5 +1,5 @@
 /**
- * [1371] Minimum Remove to Make Valid Parentheses
+ * [1249] Minimum Remove to Make Valid Parentheses
  *
  * Given a string <font face="monospace">s</font> of '(' , ')' and lowercase English characters.
  *
@@ -91,7 +91,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1371() {
+    fn test_1249() {
         assert_eq!(
             Solution::min_remove_to_make_valid("lee(t(c)o)de)".to_string()),
             "lee(t(c)o)de".to_string()

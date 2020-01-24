@@ -1,5 +1,5 @@
 /**
- * [1071] Binary Prefix Divisible By 5
+ * [1018] Binary Prefix Divisible By 5
  *
  * Given an array A of 0s and 1s, consider N_i: the i-th subarray from A[0] to A[i] interpreted as a binary number (from most-significant-bit to least-significant-bit.)
  *
@@ -70,7 +70,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1071() {
+    fn test_1018() {
         assert_eq!(
             Solution::prefixes_div_by5(vec![0, 1, 1]),
             vec![true, false, false]

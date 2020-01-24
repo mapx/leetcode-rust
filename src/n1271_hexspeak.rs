@@ -1,5 +1,5 @@
 /**
- * [1199] Hexspeak
+ * [1271] Hexspeak
  *
  * A decimal number can be converted to its Hexspeak representation by first converting it to an uppercase hexadecimal string, then replacing all occurrences of the digit 0 with the letter O, and the digit 1 with the letter I.  Such a representation is valid if and only if it consists only of the letters in the set {"A", "B", "C", "D", "E", "F", "I", "O"}.
  * Given a string num representing a decimal integer N, return the Hexspeak representation of N if it is valid, otherwise return "ERROR".
@@ -54,7 +54,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1199() {
+    fn test_1271() {
         assert_eq!(Solution::to_hexspeak("257".to_string()), "IOI".to_string());
         assert_eq!(Solution::to_hexspeak("3".to_string()), "ERROR".to_string());
         assert_eq!(

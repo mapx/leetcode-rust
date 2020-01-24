@@ -1,5 +1,5 @@
 /**
- * [1137] Height Checker
+ * [1051] Height Checker
  *
  * Students are asked to stand in non-decreasing order of heights for an annual photo.
  *
@@ -48,7 +48,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1137() {
+    fn test_1051() {
         assert_eq!(Solution::height_checker(vec![1, 1, 4, 2, 1, 3]), 3);
         assert_eq!(Solution::height_checker(vec![1]), 0);
         assert_eq!(Solution::height_checker(vec![1, 1]), 0);

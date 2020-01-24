@@ -1,5 +1,5 @@
 /**
- * [1370] Count Number of Nice Subarrays
+ * [1248] Count Number of Nice Subarrays
  *
  * Given an array of integers nums and an integer k. A subarray is called nice if there are k odd numbers on it.
  * Return the number of nice sub-arrays.
@@ -69,7 +69,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1370() {
+    fn test_1248() {
         assert_eq!(Solution::number_of_subarrays(vec![1, 1, 2, 1, 1], 3), 2);
         assert_eq!(Solution::number_of_subarrays(vec![2, 4, 6], 1), 0);
         assert_eq!(

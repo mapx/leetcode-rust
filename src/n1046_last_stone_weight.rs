@@ -1,5 +1,5 @@
 /**
- * [1127] Last Stone Weight
+ * [1046] Last Stone Weight
  *
  * We have a collection of rocks, each rock has a positive integer weight.
  *
@@ -66,7 +66,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1127() {
+    fn test_1046() {
         assert_eq!(Solution::last_stone_weight(vec![2, 7, 4, 1, 8, 1]), 1);
         assert_eq!(Solution::last_stone_weight(vec![2]), 2);
         assert_eq!(Solution::last_stone_weight(vec![2, 2]), 0);

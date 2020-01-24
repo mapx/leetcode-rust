@@ -1,5 +1,5 @@
 /**
- * [1389] Minimum Moves to Move a Box to Their Target Location
+ * [1263] Minimum Moves to Move a Box to Their Target Location
  *
  * Storekeeper is a game, in which the player pushes boxes around in a warehouse, trying to get them to target locations.
  * The game is represented by a grid of size n<font face="sans-serif, Arial, Verdana, Trebuchet MS">*</font>m, where each element is a wall, floor or a box.
@@ -185,7 +185,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1389() {
+    fn test_1263() {
         assert_eq!(
             Solution::min_push_box(vec![
                 vec!['#', '#', '#', '#', '#', '#'],

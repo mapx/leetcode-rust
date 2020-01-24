@@ -1,5 +1,5 @@
 /**
- * [1359] Circular Permutation in Binary Representation
+ * [1238] Circular Permutation in Binary Representation
  *
  * Given 2 integers n and start. Your task is return any permutation p of (0,1,2.....,2^n -1) such that :
  *
@@ -56,7 +56,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1359() {
+    fn test_1238() {
         assert_eq!(Solution::circular_permutation(2, 3), vec![3, 2, 0, 1]);
         assert_eq!(
             Solution::circular_permutation(3, 2),

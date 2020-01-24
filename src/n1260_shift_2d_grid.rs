@@ -1,5 +1,5 @@
 /**
- * [1386] Shift 2D Grid
+ * [1260] Shift 2D Grid
  *
  * Given a 2D grid of size m x n and an integer k. You need to shift the grid k times.
  * In one shift operation:
@@ -82,7 +82,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1386() {
+    fn test_1260() {
         assert_eq!(
             Solution::shift_grid(vec![vec![1, 2, 3], vec![4, 5, 6], vec![7, 8, 9]], 1),
             vec![vec![9, 1, 2], vec![3, 4, 5], vec![6, 7, 8]]

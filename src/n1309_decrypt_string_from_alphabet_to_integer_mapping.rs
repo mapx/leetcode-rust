@@ -1,5 +1,5 @@
 /**
- * [1434] Decrypt String from Alphabet to Integer Mapping
+ * [1309] Decrypt String from Alphabet to Integer Mapping
  *
  * Given a string s formed by digits ('0' - '9') and '#' . We want to map s to English lowercase characters as follows:
  *
@@ -81,7 +81,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1434() {
+    fn test_1309() {
         assert_eq!(
             Solution::freq_alphabets("10#11#12".to_string()),
             "jkab".to_string()

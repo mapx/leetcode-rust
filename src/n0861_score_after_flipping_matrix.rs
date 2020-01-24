@@ -1,5 +1,5 @@
 /**
- * [891] Score After Flipping Matrix
+ * [861] Score After Flipping Matrix
  *
  * We have a two dimensional matrix A where each value is 0 or 1.
  *
@@ -65,7 +65,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_891() {
+    fn test_861() {
         assert_eq!(
             Solution::matrix_score(vec![vec![0, 0, 1, 1], vec![1, 0, 1, 0], vec![1, 1, 0, 0]]),
             39

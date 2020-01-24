@@ -1,5 +1,5 @@
 /**
- * [792] Binary Search
+ * [704] Binary Search
  *
  * Given a sorted (in ascending order) integer array nums of n elements and a target value, write a function to search target in nums. If target exists, then return its index, otherwise return -1.
  *
@@ -66,7 +66,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_792() {
+    fn test_704() {
         assert_eq!(Solution::search(vec![-1, 0, 3, 5, 9, 12], 9), 4);
         assert_eq!(Solution::search(vec![-1, 0, 3, 5, 9, 12], 2), -1);
         assert_eq!(Solution::search(vec![1], 1), 0);

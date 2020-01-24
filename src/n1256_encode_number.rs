@@ -1,5 +1,5 @@
 /**
- * [1189] Encode Number
+ * [1256] Encode Number
  *
  * Given a non-negative integer num, Return its encoding string.
  *
@@ -56,7 +56,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1189() {
+    fn test_1256() {
         assert_eq!(Solution::encode(23), "1000");
         assert_eq!(Solution::encode(107), "101100");
     }

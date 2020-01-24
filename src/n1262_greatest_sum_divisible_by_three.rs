@@ -1,5 +1,5 @@
 /**
- * [1388] Greatest Sum Divisible by Three
+ * [1262] Greatest Sum Divisible by Three
  *
  * Given an array nums of integers, we need to find the maximum possible sum of elements of the array such that it is divisible by three.
  * <ol>
@@ -97,7 +97,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_1388() {
+    fn test_1262() {
         assert_eq!(Solution::max_sum_div_three(vec![3, 6, 5, 1, 8]), 18);
         assert_eq!(Solution::max_sum_div_three(vec![4]), 0);
         assert_eq!(Solution::max_sum_div_three(vec![1, 2, 3, 4, 4]), 12);
