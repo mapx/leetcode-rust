@@ -21,8 +21,8 @@
  * Note:
  *
  * <ol>
- * 	1 <= heights.length <= 100
- * 	1 <= heights[i] <= 100
+ *     1 <= heights.length <= 100
+ *     1 <= heights[i] <= 100
  * </ol>
  */
 pub struct Solution {}

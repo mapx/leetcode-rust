@@ -37,15 +37,15 @@
  * Constraints:
  *
  *
- * 	n == watchedVideos.length == friends.length
- * 	2 <= n <= 100
- * 	1 <= watchedVideos[i].length <= 100
- * 	1 <= watchedVideos[i][j].length <= 8
- * 	0 <= friends[i].length < n
- * 	0 <= friends[i][j] < n
- * 	0 <= id < n
- * 	1 <= level < n
- * 	if friends[i] contains j, then friends[j] contains i
+ *     n == watchedVideos.length == friends.length
+ *     2 <= n <= 100
+ *     1 <= watchedVideos[i].length <= 100
+ *     1 <= watchedVideos[i][j].length <= 8
+ *     0 <= friends[i].length < n
+ *     0 <= friends[i][j] < n
+ *     0 <= id < n
+ *     1 <= level < n
+ *     if friends[i] contains j, then friends[j] contains i
  *
  */
 pub struct Solution {}

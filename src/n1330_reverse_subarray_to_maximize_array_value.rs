@@ -27,8 +27,8 @@
  * Constraints:
  *
  *
- * 	1 <= nums.length <= 3*10^4
- * 	-10^5 <= nums[i] <= 10^5
+ *     1 <= nums.length <= 3*10^4
+ *     -10^5 <= nums[i] <= 10^5
  *
  */
 pub struct Solution {}

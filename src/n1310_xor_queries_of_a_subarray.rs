@@ -32,11 +32,11 @@
  * Constraints:
  *
  *
- * 	1 <= arr.length <= 3 * 10^4
- * 	1 <= arr[i] <= 10^9
- * 	1 <= queries.length <= 3 * 10^4
- * 	queries[i].length == 2
- * 	0 <= queries[i][0] <= queries[i][1] < arr.length
+ *     1 <= arr.length <= 3 * 10^4
+ *     1 <= arr[i] <= 10^9
+ *     1 <= queries.length <= 3 * 10^4
+ *     queries[i].length == 2
+ *     0 <= queries[i][0] <= queries[i][1] < arr.length
  *
  */
 pub struct Solution {}

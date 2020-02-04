@@ -5,12 +5,12 @@
  * The game is represented by a grid of size n<font face="sans-serif, Arial, Verdana, Trebuchet MS">*</font>m, where each element is a wall, floor or a box.
  * Your task is move the box 'B' to the target position 'T' under the following rules:
  *
- * 	Player is represented by character 'S' and can move up, down, left, right in the grid if its a floor (empy cell).
- * 	Floor is represented by character '.' that means free cell to walk.
- * 	Wall is represented by character '#' that means obstacle  (impossible to walk there).
- * 	There is only one box 'B' and one target cell 'T' in the grid.
- * 	The box can be moved to an adjacent free cell by standing next to the box and then moving in the direction of the box. This is a push.
- * 	The player cannot walk through the box.
+ *     Player is represented by character 'S' and can move up, down, left, right in the grid if its a floor (empy cell).
+ *     Floor is represented by character '.' that means free cell to walk.
+ *     Wall is represented by character '#' that means obstacle  (impossible to walk there).
+ *     There is only one box 'B' and one target cell 'T' in the grid.
+ *     The box can be moved to an adjacent free cell by standing next to the box and then moving in the direction of the box. This is a push.
+ *     The player cannot walk through the box.
  *
  * Return the minimum number of pushes to move the box to the target. If there is no way to reach the target, return -1.
  *  
@@ -56,10 +56,10 @@
  *  
  * Constraints:
  *
- * 	1 <= grid.length <= 20
- * 	1 <= grid[i].length <= 20
- * 	grid contains only characters '.', '#',  'S' , 'T', or 'B'.
- * 	There is only one character 'S', 'B' <font face="sans-serif, Arial, Verdana, Trebuchet MS">and </font>'T' in the grid.
+ *     1 <= grid.length <= 20
+ *     1 <= grid[i].length <= 20
+ *     grid contains only characters '.', '#',  'S' , 'T', or 'B'.
+ *     There is only one character 'S', 'B' <font face="sans-serif, Arial, Verdana, Trebuchet MS">and </font>'T' in the grid.
  *
  */
 pub struct Solution {}

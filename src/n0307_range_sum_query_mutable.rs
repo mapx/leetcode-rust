@@ -18,8 +18,8 @@
  * Note:
  *
  * <ol>
- * 	The array is only modifiable by the update function.
- * 	You may assume the number of calls to update and sumRange function is distributed evenly.
+ *     The array is only modifiable by the update function.
+ *     You may assume the number of calls to update and sumRange function is distributed evenly.
  * </ol>
  *
  */

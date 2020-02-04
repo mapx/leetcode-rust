@@ -24,9 +24,9 @@
  *  
  * Constraints:
  *
- * 	1 <= nums.length <= 50000
- * 	1 <= nums[i] <= 10^5
- * 	1 <= k <= nums.length
+ *     1 <= nums.length <= 50000
+ *     1 <= nums[i] <= 10^5
+ *     1 <= k <= nums.length
  *
  */
 pub struct Solution {}

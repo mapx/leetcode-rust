@@ -50,8 +50,8 @@
  * Constraints:
  *
  *
- * 	1 <= s.length <= 500
- * 	All characters of s are lower case English letters.
+ *     1 <= s.length <= 500
+ *     All characters of s are lower case English letters.
  *
  */
 pub struct Solution {}

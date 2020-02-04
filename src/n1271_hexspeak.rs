@@ -18,9 +18,9 @@
  *  
  * Constraints:
  *
- * 	1 <= N <= 10^12
- * 	There are no leading zeros in the given string.
- * 	All answers must be in uppercase letters.
+ *     1 <= N <= 10^12
+ *     There are no leading zeros in the given string.
+ *     All answers must be in uppercase letters.
  *
  */
 pub struct Solution {}

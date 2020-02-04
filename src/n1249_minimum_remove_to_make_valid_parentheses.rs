@@ -8,9 +8,9 @@
  * Formally, a parentheses string is valid if and only if:
  *
  *
- * 	It is the empty string, contains only lowercase characters, or
- * 	It can be written as AB (A concatenated with B), where A and B are valid strings, or
- * 	It can be written as (A), where A is a valid string.
+ *     It is the empty string, contains only lowercase characters, or
+ *     It can be written as AB (A concatenated with B), where A and B are valid strings, or
+ *     It can be written as (A), where A is a valid string.
  *
  *
  *  
@@ -48,8 +48,8 @@
  * Constraints:
  *
  *
- * 	1 <= s.length <= 10^5
- * 	s[i] is one of  '(' , ')' and lowercase English letters.
+ *     1 <= s.length <= 10^5
+ *     s[i] is one of  '(' , ')' and lowercase English letters.
  *
  */
 pub struct Solution {}

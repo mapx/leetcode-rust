@@ -4,8 +4,8 @@
  * Given a string s formed by digits ('0' - '9') and '#' . We want to map s to English lowercase characters as follows:
  *
  *
- * 	Characters ('a' to 'i') are represented by ('1' to '9') respectively.
- * 	Characters ('j' to 'z') are represented by ('10#' to '26#') respectively.
+ *     Characters ('a' to 'i') are represented by ('1' to '9') respectively.
+ *     Characters ('j' to 'z') are represented by ('10#' to '26#') respectively.
  *
  *
  * Return the string formed after mapping.
@@ -46,9 +46,9 @@
  * Constraints:
  *
  *
- * 	1 <= s.length <= 1000
- * 	s[i] only contains digits letters ('0'-'9') and '#' letter.
- * 	s will be valid string such that mapping is always possible.
+ *     1 <= s.length <= 1000
+ *     s[i] only contains digits letters ('0'-'9') and '#' letter.
+ *     s will be valid string such that mapping is always possible.
  *
  */
 pub struct Solution {}

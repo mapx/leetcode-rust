@@ -16,9 +16,9 @@
  * Constraints:
  *
  *
- * 	2 <= nums.length <= 100
- * 	nums.length % 2 == 0
- * 	<font face="monospace">1 <= nums[i] <= 100</font>
+ *     2 <= nums.length <= 100
+ *     nums.length % 2 == 0
+ *     <font face="monospace">1 <= nums[i] <= 100</font>
  *
  */
 pub struct Solution {}

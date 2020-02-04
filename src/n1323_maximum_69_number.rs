@@ -37,8 +37,8 @@
  * Constraints:
  *
  *
- * 	1 <= num <= 10^4
- * 	num's digits are 6 or 9.
+ *     1 <= num <= 10^4
+ *     num's digits are 6 or 9.
  *
  */
 pub struct Solution {}

@@ -14,8 +14,8 @@
  *  
  * Constraints:
  *
- * 	1 <= intervals.length <= 10^4
- * 	-10^9 <= intervals[i][0] < intervals[i][1] <= 10^9
+ *     1 <= intervals.length <= 10^4
+ *     -10^9 <= intervals[i][0] < intervals[i][1] <= 10^9
  *
  */
 pub struct Solution {}

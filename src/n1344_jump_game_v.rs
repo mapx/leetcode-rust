@@ -4,8 +4,8 @@
  * Given an array of integers arr and an integer d. In one step you can jump from index i to index:
  *
  *
- * 	i + x where: i + x < arr.length and  0 < x <= d.
- * 	i - x where: i - x >= 0 and  0 < x <= d.
+ *     i + x where: i + x < arr.length and  0 < x <= d.
+ *     i - x where: i - x >= 0 and  0 < x <= d.
  *
  *
  * In addition, you can only jump from index i to index j if arr[i] > arr[j] and arr[i] > arr[k] for all indices k between i and j (More formally min(i, j) < k < max(i, j)).
@@ -59,9 +59,9 @@
  * Constraints:
  *
  *
- * 	1 <= arr.length <= 1000
- * 	1 <= arr[i] <= 10^5
- * 	1 <= d <= arr.length
+ *     1 <= arr.length <= 1000
+ *     1 <= arr[i] <= 10^5
+ *     1 <= d <= arr.length
  *
  */
 pub struct Solution {}

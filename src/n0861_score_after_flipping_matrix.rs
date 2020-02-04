@@ -29,9 +29,9 @@
  * Note:
  *
  * <ol>
- * 	1 <= A.length <= 20
- * 	1 <= A[0].length <= 20
- * 	A[i][j] is 0 or 1.
+ *     1 <= A.length <= 20
+ *     1 <= A[0].length <= 20
+ *     A[i][j] is 0 or 1.
  * </ol>
  * </div>
  *

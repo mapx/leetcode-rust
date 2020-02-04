@@ -3,15 +3,15 @@
  *
  * Given a binary tree with the following rules:
  * <ol>
- * 	root.val == 0
- * 	If treeNode.val == x and treeNode.left != null, then treeNode.left.val == 2 * x + 1
- * 	If treeNode.val == x and treeNode.right != null, then treeNode.right.val == 2 * x + 2
+ *     root.val == 0
+ *     If treeNode.val == x and treeNode.left != null, then treeNode.left.val == 2 * x + 1
+ *     If treeNode.val == x and treeNode.right != null, then treeNode.right.val == 2 * x + 2
  * </ol>
  * Now the binary tree is contaminated, which means all treeNode.val have been changed to -1.
  * You need to first recover the binary tree and then implement the FindElements class:
  *
- * 	FindElements(TreeNode* root) Initializes the object with a contamined binary tree, you need to recover it first.
- * 	bool find(int target) Return if the target value exists in the recovered binary tree.
+ *     FindElements(TreeNode* root) Initializes the object with a contamined binary tree, you need to recover it first.
+ *     bool find(int target) Return if the target value exists in the recovered binary tree.
  *
  *  
  * Example 1:
@@ -57,11 +57,11 @@
  *  
  * Constraints:
  *
- * 	TreeNode.val == -1
- * 	The height of the binary tree is less than or equal to 20
- * 	The total number of nodes is between [1, 10^4]
- * 	Total calls of find() is between [1, 10^4]
- * 	0 <= target <= 10^6
+ *     TreeNode.val == -1
+ *     The height of the binary tree is less than or equal to 20
+ *     The total number of nodes is between [1, 10^4]
+ *     Total calls of find() is between [1, 10^4]
+ *     0 <= target <= 10^6
  *
  */
 pub struct Solution {}

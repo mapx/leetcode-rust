@@ -26,7 +26,7 @@
  * Constraints:
  *
  *
- * 	0 <= num <= 10^9
+ *     0 <= num <= 10^9
  *
  */
 pub struct Solution {}

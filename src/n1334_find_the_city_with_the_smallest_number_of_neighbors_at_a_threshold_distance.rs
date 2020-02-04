@@ -45,12 +45,12 @@
  * Constraints:
  *
  *
- * 	2 <= n <= 100
- * 	1 <= edges.length <= n * (n - 1) / 2
- * 	edges[i].length == 3
- * 	0 <= fromi < toi < n
- * 	1 <= weighti, distanceThreshold <= 10^4
- * 	All pairs (fromi, toi) are distinct.
+ *     2 <= n <= 100
+ *     1 <= edges.length <= n * (n - 1) / 2
+ *     edges[i].length == 3
+ *     0 <= fromi < toi < n
+ *     1 <= weighti, distanceThreshold <= 10^4
+ *     All pairs (fromi, toi) are distinct.
  *
  */
 pub struct Solution {}

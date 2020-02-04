@@ -31,8 +31,8 @@
  *  
  * Constraints:
  *
- * 	1 <= s1.length, s2.length <= 1000
- * 	s1, s2 only contain 'x' or 'y'.
+ *     1 <= s1.length, s2.length <= 1000
+ *     s1, s2 only contain 'x' or 'y'.
  *
  */
 pub struct Solution {}
