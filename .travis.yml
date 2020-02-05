@@ -1,0 +1,20 @@
+language: rust
+
+sudo: required
+
+rust:
+  - stable
+  - beta
+  - nightly
+
+jobs:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
+
+before_script:
+  - rustup component add clippy
+
+script:
+  - cargo clippy --all-targets --all-features -- -D warnings
+  - cargo test
