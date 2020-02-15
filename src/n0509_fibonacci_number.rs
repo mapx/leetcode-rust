@@ -42,6 +42,8 @@
  *
  * 0 &le; N &le; 30.
  *
+ * Problem link: https://leetcode.com/problems/fibonacci-number/
+ * Discuss link: https://leetcode.com/problems/fibonacci-number/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

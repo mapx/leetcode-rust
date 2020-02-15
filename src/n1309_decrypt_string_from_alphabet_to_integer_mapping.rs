@@ -50,6 +50,8 @@
  *     s[i] only contains digits letters ('0'-'9') and '#' letter.
  *     s will be valid string such that mapping is always possible.
  *
+ * Problem link: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/
+ * Discuss link: https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

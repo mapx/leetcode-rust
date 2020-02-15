@@ -32,12 +32,14 @@
  * Constraints:
  *
  *
- *     1 <= arr.length <= 3 * 10^4
- *     1 <= arr[i] <= 10^9
- *     1 <= queries.length <= 3 * 10^4
- *     queries[i].length == 2
- *     0 <= queries[i][0] <= queries[i][1] < arr.length
+ *  1 <= arr.length <= 3 * 10^4
+ *  1 <= arr[i] <= 10^9
+ *  1 <= queries.length <= 3 * 10^4
+ *  queries[i].length == 2
+ *  0 <= queries[i][0] <= queries[i][1] < arr.length
  *
+ * Problem link: https://leetcode.com/problems/xor-queries-of-a-subarray/
+ * Discuss link: https://leetcode.com/problems/xor-queries-of-a-subarray/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

@@ -50,9 +50,11 @@
  * Constraints:
  *
  *
- *     1 <= s.length <= 500
- *     All characters of s are lower case English letters.
+ *  1 <= s.length <= 500
+ *  All characters of s are lower case English letters.
  *
+ * Problem link: https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
+ * Discuss link: https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

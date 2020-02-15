@@ -63,6 +63,8 @@
  *     Total calls of find() is between [1, 10^4]
  *     0 <= target <= 10^6
  *
+ * Problem link: https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/
+ * Discuss link: https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 use super::util::tree::{to_tree, TreeNode};

@@ -12,7 +12,8 @@
  * Output: 7 -> 0 -> 8
  * Explanation: 342 + 465 = 807.
  *
- *
+ * Problem link: https://leetcode.com/problems/add-two-numbers/
+ * Discuss link: https://leetcode.com/problems/add-two-numbers/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 use super::util::linked_list::{to_list, ListNode};

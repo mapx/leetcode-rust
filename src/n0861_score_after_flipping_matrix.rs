@@ -9,22 +9,13 @@
  *
  * Return the highest possible score.
  *
- *  
- *
- * <ol>
- * </ol>
- *
  * <div>
  * Example 1:
- *
- *
  * Input: <span id="example-input-1-1">[[0,0,1,1],[1,0,1,0],[1,1,0,0]]</span>
  * Output: <span id="example-output-1">39</span>
  * Explanation:
  * Toggled to <span id="example-input-1-1">[[1,1,1,1],[1,0,0,1],[1,1,1,1]].
  * 0b1111 + 0b1001 + 0b1111 = 15 + 9 + 15 = 39</span>
- *
- *  
  *
  * Note:
  *
@@ -35,6 +26,8 @@
  * </ol>
  * </div>
  *
+ * Problem link: https://leetcode.com/problems/score-after-flipping-matrix/
+ * Discuss link: https://leetcode.com/problems/score-after-flipping-matrix/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

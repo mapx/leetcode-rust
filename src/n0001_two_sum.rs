@@ -13,7 +13,8 @@
  * Because nums[0] + nums[1] = 2 + 7 = 9,
  * return [0, 1].
  *
- *
+ * Problem link: https://leetcode.com/problems/two-sum/
+ * Discuss link: https://leetcode.com/problems/two-sum/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

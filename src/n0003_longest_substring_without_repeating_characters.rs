@@ -34,6 +34,8 @@
  * </div>
  * </div>
  *
+ * Problem link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * Discuss link: https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

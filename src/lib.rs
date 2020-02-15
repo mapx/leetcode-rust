@@ -33,4 +33,4 @@ mod n1313_decompress_run_length_encoded_list;
 mod n1323_maximum_69_number;
 mod n1330_reverse_subarray_to_maximize_array_value;
 mod n1334_find_the_city_with_the_smallest_number_of_neighbors_at_a_threshold_distance;
-mod n1344_jump_game_v;
+mod n1340_jump_game_v;

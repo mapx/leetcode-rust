@@ -38,6 +38,8 @@
  *     0 <= score[i] <= 10
  *     words[i], letters[i] contains only lower case English letters.
  *
+ * Problem link: https://leetcode.com/problems/maximum-score-words-formed-by-letters/
+ * Discuss link: https://leetcode.com/problems/maximum-score-words-formed-by-letters/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

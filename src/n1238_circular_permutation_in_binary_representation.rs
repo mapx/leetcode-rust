@@ -27,6 +27,8 @@
  *     1 <= n <= 16
  *     0 <= start < 2 ^ n
  *
+ * Problem link: https://leetcode.com/problems/circular-permutation-in-binary-representation/
+ * Discuss link: https://leetcode.com/problems/circular-permutation-in-binary-representation/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

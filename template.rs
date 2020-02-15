@@ -2,6 +2,8 @@
  * [__PROBLEM_ID__] __PROBLEM_TITLE__
  *
  * __PROBLEM_DESC__
+ * Problem link: __PROBLEM_LINK__
+ * Discuss link: __DISCUSS_LINK__
  */
 pub struct Solution {}__EXTRA_USE__
 

@@ -27,9 +27,11 @@
  * Constraints:
  *
  *
- *     1 <= nums.length <= 3*10^4
- *     -10^5 <= nums[i] <= 10^5
+ *  1 <= nums.length <= 3*10^4
+ *  -10^5 <= nums[i] <= 10^5
  *
+ * Problem link: https://leetcode.com/problems/reverse-subarray-to-maximize-array-value/
+ * Discuss link: https://leetcode.com/problems/reverse-subarray-to-maximize-array-value/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

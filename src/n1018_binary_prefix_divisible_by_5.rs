@@ -13,29 +13,17 @@
  * Explanation:
  * The input numbers in binary are 0, 01, 011; which are 0, 1, and 3 in base-10.  Only the first number is divisible by 5, so answer[0] is true.
  *
- *
  * Example 2:
- *
- *
  * Input: <span id="example-input-2-1">[1,1,1]</span>
  * Output: <span id="example-output-2">[false,false,false]</span>
  *
- *
  * Example 3:
- *
- *
  * Input: <span id="example-input-3-1">[0,1,1,1,1,1]</span>
  * Output: <span id="example-output-3">[true,false,false,false,true,false]</span>
  *
- *
  * Example 4:
- *
- *
  * Input: <span id="example-input-4-1">[1,1,1,0,1]</span>
  * Output: <span id="example-output-4">[false,false,false,false,false]</span>
- *
- *
- *  
  *
  * Note:
  *
@@ -44,6 +32,8 @@
  *     A[i] is 0 or 1
  * </ol>
  *
+ * Problem link: https://leetcode.com/problems/binary-prefix-divisible-by-5/
+ * Discuss link: https://leetcode.com/problems/binary-prefix-divisible-by-5/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

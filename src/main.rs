@@ -4,7 +4,7 @@ extern crate serde_derive;
 extern crate serde_json;
 
 mod problem;
-
+use crate::problem::Problem;
 use regex::Regex;
 use std::env;
 use std::fs;
@@ -80,7 +80,9 @@ fn main() {
                 &insert_return_in_code(&problem.return_type, &code.default_code),
             )
             .replace("__PROBLEM_ID__", &format!("{}", problem.question_id))
-            .replace("__EXTRA_USE__", &parse_extra_use(&code.default_code));
+            .replace("__EXTRA_USE__", &parse_extra_use(&code.default_code))
+            .replace("__PROBLEM_LINK__", &parse_problem_link(&problem))
+            .replace("__DISCUSS_LINK__", &parse_discuss_link(&problem));
 
         let mut file = fs::OpenOptions::new()
             .write(true)
@@ -151,6 +153,17 @@ fn parse_extra_use(code: &str) -> String {
     extra_use_line
 }
 
+fn parse_problem_link(problem: &Problem) -> String {
+    format!("https://leetcode.com/problems/{}/", problem.title_slug)
+}
+
+fn parse_discuss_link(problem: &Problem) -> String {
+    format!(
+        "https://leetcode.com/problems/{}/discuss/?currentPage=1&orderBy=most_votes",
+        problem.title_slug
+    )
+}
+
 fn insert_return_in_code(return_type: &str, code: &str) -> String {
     let re = Regex::new(r"\{[ \n]+}").unwrap();
     match return_type {
@@ -195,7 +208,11 @@ fn insert_return_in_code(return_type: &str, code: &str) -> String {
 
 fn build_desc(content: &str) -> String {
     // TODO: fix this shit
-    content
+    Regex::new("<font .*\">")
+        .unwrap()
+        .replace_all(&content, "`")
+        .to_string()
+        .replace("</font>", "`")
         .replace("<strong>", "")
         .replace("</strong>", "")
         .replace("<em>", "")
@@ -210,8 +227,8 @@ fn build_desc(content: &str) -> String {
         .replace("</ul>", "")
         .replace("<li>", "")
         .replace("</li>", "")
-        .replace("<code>", "")
-        .replace("</code>", "")
+        .replace("<code>", "`")
+        .replace("</code>", "`")
         .replace("<i>", "")
         .replace("</i>", "")
         .replace("<sub>", "")

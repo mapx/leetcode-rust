@@ -1,5 +1,5 @@
 /**
- * [1344] Jump Game V
+ * [1340] Jump Game V
  *
  * Given an array of integers arr and an integer d. In one step you can jump from index i to index:
  *
@@ -59,10 +59,12 @@
  * Constraints:
  *
  *
- *     1 <= arr.length <= 1000
- *     1 <= arr[i] <= 10^5
- *     1 <= d <= arr.length
+ *  1 <= arr.length <= 1000
+ *  1 <= arr[i] <= 10^5
+ *  1 <= d <= arr.length
  *
+ * Problem link: https://leetcode.com/problems/jump-game-v/
+ * Discuss link: https://leetcode.com/problems/jump-game-v/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

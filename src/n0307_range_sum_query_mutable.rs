@@ -6,14 +6,11 @@
  * The update(i, val) function modifies nums by updating the element at index i to val.
  *
  * Example:
- *
- *
  * Given nums = [1, 3, 5]
  *
  * sumRange(0, 2) -> 9
  * update(1, 2)
  * sumRange(0, 2) -> 8
- *
  *
  * Note:
  *
@@ -22,6 +19,8 @@
  *     You may assume the number of calls to update and sumRange function is distributed evenly.
  * </ol>
  *
+ * Problem link: https://leetcode.com/problems/range-sum-query-mutable/
+ * Discuss link: https://leetcode.com/problems/range-sum-query-mutable/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

@@ -28,6 +28,8 @@
  *     1 <= nums[i] <= 10^5
  *     1 <= k <= nums.length
  *
+ * Problem link: https://leetcode.com/problems/count-number-of-nice-subarrays/
+ * Discuss link: https://leetcode.com/problems/count-number-of-nice-subarrays/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

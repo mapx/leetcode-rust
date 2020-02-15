@@ -28,6 +28,8 @@
  *     1 <= nums.length <= 4 * 10^4
  *     1 <= nums[i] <= 10^4
  *
+ * Problem link: https://leetcode.com/problems/greatest-sum-divisible-by-three/
+ * Discuss link: https://leetcode.com/problems/greatest-sum-divisible-by-three/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

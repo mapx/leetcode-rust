@@ -34,6 +34,8 @@
  *     1 <= s1.length, s2.length <= 1000
  *     s1, s2 only contain 'x' or 'y'.
  *
+ * Problem link: https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/
+ * Discuss link: https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

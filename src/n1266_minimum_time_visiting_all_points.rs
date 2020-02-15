@@ -24,11 +24,13 @@
  *  
  * Constraints:
  *
- *     points.length == n
- *     1 <= n <= 100
- *     points[i].length == 2
- *     -1000 <= points[i][0], points[i][1] <= 1000
+ *  points.length == n
+ *  1 <= n <= 100
+ *  points[i].length == 2
+ *  -1000 <= points[i][0], points[i][1] <= 1000
  *
+ * Problem link: https://leetcode.com/problems/minimum-time-visiting-all-points/
+ * Discuss link: https://leetcode.com/problems/minimum-time-visiting-all-points/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

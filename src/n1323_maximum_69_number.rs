@@ -37,9 +37,11 @@
  * Constraints:
  *
  *
- *     1 <= num <= 10^4
- *     num's digits are 6 or 9.
+ *  1 <= num <= 10^4
+ *  num's digits are 6 or 9.
  *
+ * Problem link: https://leetcode.com/problems/maximum-69-number/
+ * Discuss link: https://leetcode.com/problems/maximum-69-number/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

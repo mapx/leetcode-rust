@@ -15,11 +15,12 @@
  *  
  * Constraints:
  *
+ *  2 <= nums.length <= 100
+ *  nums.length % 2 == 0
+ *  1 <= nums[i] <= 100
  *
- *     2 <= nums.length <= 100
- *     nums.length % 2 == 0
- *     <font face="monospace">1 <= nums[i] <= 100</font>
- *
+ * Problem link: https://leetcode.com/problems/decompress-run-length-encoded-list/
+ * Discuss link: https://leetcode.com/problems/decompress-run-length-encoded-list/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

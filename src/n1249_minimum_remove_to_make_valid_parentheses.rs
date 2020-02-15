@@ -1,7 +1,7 @@
 /**
  * [1249] Minimum Remove to Make Valid Parentheses
  *
- * Given a string <font face="monospace">s</font> of '(' , ')' and lowercase English characters.
+ * Given a string `s` of '(' , ')' and lowercase English characters.
  *
  * Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string.
  *
@@ -51,6 +51,8 @@
  *     1 <= s.length <= 10^5
  *     s[i] is one of  '(' , ')' and lowercase English letters.
  *
+ * Problem link: https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
+ * Discuss link: https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 

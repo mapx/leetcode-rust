@@ -15,8 +15,6 @@
  *  
  *
  * Example 1:
- *
- *
  * Input: [2,7,4,1,8,1]
  * Output: 1
  * Explanation:
@@ -25,14 +23,14 @@
  * we combine 2 and 1 to get 1 so the array converts to [1,1,1] then,
  * we combine 1 and 1 to get 0 so the array converts to [1] then that's the value of last stone.
  *
- *  
- *
  * Note:
- *
  * <ol>
  *     1 <= stones.length <= 30
  *     1 <= stones[i] <= 1000
  * </ol>
+ *
+ * Problem link: https://leetcode.com/problems/last-stone-weight/
+ * Discuss link: https://leetcode.com/problems/last-stone-weight/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
 
