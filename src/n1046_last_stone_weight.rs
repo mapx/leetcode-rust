@@ -39,21 +39,17 @@ pub struct Solution {}
 use std::collections::BinaryHeap;
 impl Solution {
     pub fn last_stone_weight(stones: Vec<i32>) -> i32 {
-        let mut heap = BinaryHeap::new();
-        heap.extend(stones);
-        loop {
-            if let Some(rock1) = heap.pop() {
-                if let Some(rock2) = heap.pop() {
-                    if rock1 > rock2 {
-                        heap.push(rock1 - rock2);
-                    }
-                } else {
-                    return rock1;
+        let mut heap = BinaryHeap::from(stones);
+        while let Some(rock1) = heap.pop() {
+            if let Some(rock2) = heap.pop() {
+                if rock1 > rock2 {
+                    heap.push(rock1 - rock2);
                 }
             } else {
-                return 0;
+                return rock1;
             }
         }
+        0
     }
 }
 
