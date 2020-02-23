@@ -6,3 +6,4 @@ pub mod vec_string;
 pub mod tree;
 #[macro_use]
 pub mod point;
+pub mod union_find;
