@@ -52,7 +52,7 @@ impl Solution {
             .iter()
             .chain(arr.iter())
             .map(|n| {
-                last ^= n;
+                last ^= *n;
                 last
             })
             .collect();

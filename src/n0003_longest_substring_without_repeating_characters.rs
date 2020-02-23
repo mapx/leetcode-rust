@@ -61,7 +61,7 @@ impl Solution {
         best
     }
 
-    // bitwise operator version, fatest
+    // bitwise operator version, fastest
     pub fn length_of_longest_substring(s: String) -> i32 {
         // return Self::length_of_longest_substring_with_set(s);
         let mut lo = -1;

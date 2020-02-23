@@ -139,7 +139,7 @@ impl Solution {
             false
         };
 
-        // BFS every posibility
+        // BFS every possibility
         let mut processed = HashSet::new();
         let mut todo = vec![(g, b, s)];
         let mut step = 0;

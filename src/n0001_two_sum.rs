@@ -25,7 +25,7 @@ impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut mem = HashMap::with_capacity(nums.len());
         for (i, n) in nums.iter().enumerate() {
-            if let Some(j) = mem.get(&(target - n)) {
+            if let Some(j) = mem.get(&(target - *n)) {
                 return vec![*j, i as i32];
             }
             mem.insert(n, i as i32);

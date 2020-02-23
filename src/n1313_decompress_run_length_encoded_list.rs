@@ -34,7 +34,7 @@ impl Solution {
             match iter.next() {
                 Some(&a) => {
                     let b = iter.next().unwrap();
-                    for _ in (0..(a as usize)) {
+                    for _ in 0..(a as usize) {
                         r.push(*b);
                     }
                 }
