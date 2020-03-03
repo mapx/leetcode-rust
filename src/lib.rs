@@ -41,3 +41,4 @@ mod n1356_sort_integers_by_the_number_of_1_bits;
 mod n1358_number_of_substrings_containing_all_three_characters;
 mod n1359_count_all_valid_pickup_and_delivery_options;
 mod n1361_validate_binary_tree_nodes;
+mod n1365_how_many_numbers_are_smaller_than_the_current_number;
