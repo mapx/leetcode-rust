@@ -243,4 +243,5 @@ fn build_desc(content: &str) -> String {
         .replace("&#39;", "'")
         .replace("\n\n", "\n")
         .replace("\n", "\n * ")
+        .replace("\t", "    ")
 }
