@@ -42,3 +42,4 @@ mod n1358_number_of_substrings_containing_all_three_characters;
 mod n1359_count_all_valid_pickup_and_delivery_options;
 mod n1361_validate_binary_tree_nodes;
 mod n1365_how_many_numbers_are_smaller_than_the_current_number;
+mod n1367_linked_list_in_binary_tree;

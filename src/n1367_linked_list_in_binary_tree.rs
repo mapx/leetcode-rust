@@ -47,6 +47,7 @@
  * Discuss link: https://leetcode.com/problems/linked-list-in-binary-tree/discuss/?currentPage=1&orderBy=most_votes
  */
 pub struct Solution {}
+
 use super::util::linked_list::{to_list, ListNode};
 use super::util::tree::{to_tree, TreeNode};
 
@@ -86,11 +87,52 @@ use super::util::tree::{to_tree, TreeNode};
 //     }
 //   }
 // }
+use std::borrow::Borrow;
 use std::cell::RefCell;
 use std::rc::Rc;
+
 impl Solution {
     pub fn is_sub_path(head: Option<Box<ListNode>>, root: Option<Rc<RefCell<TreeNode>>>) -> bool {
-        false
+        /// ref https://leetcode.com/problems/linked-list-in-binary-tree/discuss/524881/Python-Recursive-Solution-O(N)-Time
+        /// ref https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
+        let mut dp = vec![0];
+        let mut i: usize = 0;
+        let mut node = head.unwrap();
+        let mut a = vec![node.val];
+
+        while let Some(mut inner) = node.next {
+            let node_val = inner.val;
+            unsafe {
+                while i != 0 && *a.get_unchecked(i) != node_val {
+                    i = *dp.get_unchecked(i - 1);
+                }
+                i += (node_val == *a.get_unchecked(i)) as usize;
+            }
+            a.push(node_val);
+            dp.push(i);
+            node = inner;
+        }
+
+        fn dfs(root: Option<Rc<RefCell<TreeNode>>>, mut i: usize, a: &[i32], dp: &[usize]) -> bool {
+            if let Some(inner) = root {
+                let val = inner.as_ref().borrow().val;
+                unsafe {
+                    while i > 0 && val != *a.get_unchecked(i) {
+                        i = *dp.get_unchecked(i - 1);
+                    }
+                    i += (val == *a.get_unchecked(i)) as usize;
+                }
+                if i == dp.len() {
+                    return true;
+                }
+                dfs(inner.as_ref().borrow().left.clone(), i, a, dp)
+                    || dfs(inner.as_ref().borrow().right.clone(), i, a, dp)
+            } else {
+                false
+            }
+        }
+
+        dfs(root, 0, &a, &dp)
     }
 }
 
@@ -102,8 +144,27 @@ mod tests {
 
     #[test]
     fn test_1367() {
-        assert_eq!(Solution::is_sub_path(),);
-        assert_eq!(Solution::is_sub_path(),);
+        assert_eq!(
+            Solution::is_sub_path(
+                to_list(vec![4, 2, 8]),
+                tree![1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3]
+            ),
+            true
+        );
+        assert_eq!(
+            Solution::is_sub_path(
+                to_list(vec![1, 4, 2, 6]),
+                tree![1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3]
+            ),
+            true
+        );
+        assert_eq!(
+            Solution::is_sub_path(
+                to_list(vec![1, 4, 2, 6, 8]),
+                tree![1, 4, 4, null, 2, 2, null, 1, null, 6, 8, null, null, null, null, 1, 3]
+            ),
+            false
+        );
         assert_eq!(
             Solution::is_sub_path(
                 to_list(vec![9, 1, 5, 7, 6, 5, 2, 1, 1, 2]),
@@ -120,7 +181,7 @@ mod tests {
                     null, null, null, null, null, null, null, null, 7, 6, null, 7, null, null,
                     null, 5, null, null, null, 2, null, null, null, null, null, null, null, null,
                     null, null, null, null, null, null, 9
-                ]
+                ],
             ),
             true
         );
@@ -392,7 +453,7 @@ mod tests {
                     null, 5, 8, null, null, 3, 10, null, null, null, 5, null, 8, null, 5, null, 4,
                     null, 5, 6, 2, null, null, null, 7, null, 5, null, 10, null, 8, 1, 5, null,
                     null, null, 1, null, 1, null, 5, null, 9, null, 6, null, 1, null, 5
-                ]
+                ],
             ),
             false
         );
