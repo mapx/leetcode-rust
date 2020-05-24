@@ -8,6 +8,7 @@ mod n0004_median_of_two_sorted_arrays;
 mod n0007_reverse_integer;
 mod n0307_range_sum_query_mutable;
 mod n0509_fibonacci_number;
+mod n0700_search_in_a_binary_search_tree;
 mod n0704_binary_search;
 mod n0839_similar_string_groups;
 mod n0861_score_after_flipping_matrix;
