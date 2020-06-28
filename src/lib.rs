@@ -50,5 +50,7 @@ mod n1416_restore_the_array;
 mod n1420_build_array_where_you_can_find_the_maximum_exactly_k_comparisons;
 mod n1424_diagonal_traverse_ii;
 mod n1425_constrained_subset_sum;
+mod n1470_shuffle_the_array;
 mod n1475_final_prices_with_a_special_discount_in_a_shop;
 mod n1480_running_sum_of_1d_array;
+mod n1486_xor_operation_in_an_array;
