@@ -44,6 +44,7 @@ pub struct Solution {}
 
 // submission codes start here
 use std::collections::BinaryHeap;
+use std::cmp;
 
 impl Solution {
     pub fn is_possible(target: Vec<i32>) -> bool {
@@ -55,7 +56,7 @@ impl Solution {
                 n as usize
             })
             .collect(); // important conversion that prevent summary overflow
-        target.sort_unstable_by(|a, b| b.cmp(a));
+        target.sort_unstable_by_key(|&a| cmp::Reverse(a));
         let mut heap = BinaryHeap::new();
         for n in target {
             heap.push(n);
