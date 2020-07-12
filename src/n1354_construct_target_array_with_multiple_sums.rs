@@ -43,6 +43,7 @@
 pub struct Solution {}
 
 // submission codes start here
+use std::cmp;
 use std::collections::BinaryHeap;
 
 impl Solution {
@@ -55,7 +56,7 @@ impl Solution {
                 n as usize
             })
             .collect(); // important conversion that prevent summary overflow
-        target.sort_unstable_by(|a, b| b.cmp(a));
+        target.sort_unstable_by_key(|&a| cmp::Reverse(a));
         let mut heap = BinaryHeap::new();
         for n in target {
             heap.push(n);
