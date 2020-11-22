@@ -57,3 +57,4 @@ mod n1486_xor_operation_in_an_array;
 mod n1491_average_salary_excluding_the_minimum_and_maximum_salary;
 mod n1502_can_make_arithmetic_progression_from_sequence;
 mod n1512_number_of_good_pairs;
+mod n1614_maximum_nesting_depth_of_the_parentheses;

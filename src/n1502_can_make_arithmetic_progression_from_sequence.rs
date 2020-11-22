@@ -32,7 +32,7 @@ pub struct Solution {}
 impl Solution {
     pub fn can_make_arithmetic_progression(arr: Vec<i32>) -> bool {
         let mut arr = arr;
-        arr.sort();
+        arr.sort_unstable();
         if arr.len() < 2 {
             return false;
         }

@@ -49,7 +49,7 @@ impl Solution {
     pub fn smaller_numbers_than_current(nums: Vec<i32>) -> Vec<i32> {
         let mut rec = HashMap::new();
         let mut ordered = nums.clone();
-        ordered.sort();
+        ordered.sort_unstable();
         for (cnt, n) in ordered.iter().enumerate() {
             rec.entry(n).or_insert(cnt as i32);
         }
